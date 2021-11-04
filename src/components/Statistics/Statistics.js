@@ -1,5 +1,4 @@
 import styles from "./Statistics.module.css";
-import PropTypes from "prop-types"
 
 const Statistics = ({ good, bad, neutral, total, countPositiveFeedbackPercentage }) => {
     return (
@@ -14,6 +13,3 @@ const Statistics = ({ good, bad, neutral, total, countPositiveFeedbackPercentage
 }
 export default Statistics;
 
-Statistics.propTypes = {
-    countPositiveFeedbackPercentage: PropTypes.func.isRequired
-}

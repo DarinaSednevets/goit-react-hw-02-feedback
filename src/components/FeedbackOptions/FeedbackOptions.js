@@ -9,14 +9,14 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
                     type="button"
                     key={option}
                     name={option}
-                    onClick={onLeaveFeedback}
+                    onClick={() => onLeaveFeedback(option)}
                     className={styles.btn}>
                     {option}
                 </button>
             ))
         }
 
-        </div>
+        </div >
     )
 };
 export default FeedbackOptions;

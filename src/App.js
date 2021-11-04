@@ -12,11 +12,10 @@ class App extends Component {
     bad: 0
   };
 
-  countFeedbackHandler = event => {
-    const { name } = event.currentTarget;
 
+  countFeedbackHandler = option => {
     this.setState(prevState => ({
-      [name]: prevState[name] + 1,
+      [option]: prevState[option] + 1,
     }));
   };
 
